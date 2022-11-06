@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { NavBarElements, RenderFooter } from "../modules/modules";
-
+import { Helmet } from 'react-helmet-async';
 
 
 const Main = () => {
   return (
     <div>
+    <Helmet>
+            <title>Counter App</title>
+            <meta name='description' content='Implementing a counter application with  useReducer hook'/>
+            <link rel='canonical' href='/Couter-app'/>
+        </Helmet>
     <NavBarElements />
       <main className="container-homepage">
       

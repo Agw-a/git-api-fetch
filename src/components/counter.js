@@ -52,7 +52,7 @@ const Counter = () => {
           <div className='counter'>
     
     <div className='count-label'>
-    <h4>Count: {state.count}</h4>
+    <p>Count: {state.count}</p>
     </div>
       <div className='count-buttons'>
       <button onClick={DecreaseCount}>-</button>

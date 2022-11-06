@@ -55,7 +55,8 @@ const Card = ()  => {
             <Groceries />
             <Bags />
             <button className='toggle-view' onClick={clickHandler}>🌓</button>
-            <Link to={'/Couter-app/Custom Hook'} className='link-frm-custom' style={{color:'#621708', fontWeight:700}}>Custom Hook ↗ </Link>
+            <Link to={'/Couter-app/Custom Hook'} className='link-frm-custom' style={{color:'#621708', fontWeight:700, margin: '30px'}}>Custom checkout ↗ </Link>
+            <Link to={'/'} className='link-frm-custom' style={{color:'#621708', fontWeight:700, margin: '30px'}}>↖ Back Home </Link>
             </div>
             </div>
       )

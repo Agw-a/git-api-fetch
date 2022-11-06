@@ -82,8 +82,9 @@ box-shadow: 10px 10px 2px 4px rgba(0,0,0,0.75);
   height: 50px;
   padding: 20px;
 }
-.footer h3{
+.footer p{
   font-size: 10px;
+  font-weight: 700;
 }
 #card-holder{
   display: grid;
@@ -147,7 +148,7 @@ box-shadow: 10px 10px 2px 4px rgba(0,0,0,0.75);
 .counter{
   display: grid;
 }
-.count-label h4{
+.count-label p{
   font-size: 10px;
   margin-bottom: 20px;
 }
