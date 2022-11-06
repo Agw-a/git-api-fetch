@@ -10,7 +10,7 @@ const MainPage = () => {
          <Helmet>
             <title>useReducer</title>
             <meta name='description' content='Implementing a counter application with custom hooks and useReducer'/>
-            <link rel='canonical' href='/'/>
+            {/* <link rel='canonical' href='/Couter-app'/> */}
         </Helmet>
       <NavBarElements />
       <MainCounterApp />

@@ -9,7 +9,7 @@ const CustomHookCounter = () => {
         <Helmet>
             <title>Custom Hook</title>
             <meta name='description' content='Implementing a counter application with custom hooks'/>
-            <link rel='canonical' href='/Couter-app/Custom Hook'/>
+            {/* <link rel='canonical' href='/Custom Hook'/> */}
         </Helmet>
     <NavBarElements />
     
