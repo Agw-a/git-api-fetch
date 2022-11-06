@@ -2,7 +2,7 @@
 
 const ErrorHandler = () => {
     const errorHandler = (error, errorInfo) => {
-        console.log(error)
+        console.log(error, errorInfo)
     }
   return (
     errorHandler()

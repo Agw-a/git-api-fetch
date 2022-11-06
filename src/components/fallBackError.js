@@ -1,9 +1,10 @@
 import React from 'react'
 
+
 const FallBackError = () => {
   return (
     <div>
-      Something went wrong
+      <h4 style={{color:'red'}}>Something went wrong!</h4>
     </div>
   )
 }

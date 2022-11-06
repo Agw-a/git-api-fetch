@@ -1,29 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavBarElements, RenderFooter } from "../modules/modules";
 
-const HomeNav = () => {
-  return (
-    <nav className="home-nav">
-      <h2>Git-Stats</h2>
-    </nav>
-  );
-};
+
 
 const Main = () => {
   return (
-    <>
-      <HomeNav />
+    <div>
+    <NavBarElements />
       <main className="container-homepage">
+      
         <div className="home-page">
-          <h2 className="text-home">Check User GitHub Stats</h2>
+          <div className="items-container">
+          <h2 className="text-home">Everything you need for the slow days!</h2>
           
 
-          <Link to={"/All-Repos"} className="btn">
-            Get started
+          <Link to={'/Couter-app'} className="btn">
+            Proceed to shop
           </Link>
+          </div>
+
+          
         </div>
+       
       </main>
-    </>
+      <RenderFooter />
+    </div>
   );
 };
 
