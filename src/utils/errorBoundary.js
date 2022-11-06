@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -11,7 +12,7 @@ export default function RenderError() {
     <link rel='canonical' href='/Error'/>
 </Helmet>
    <div style={{display:'grid', justifyContent:'center', backgroundColor:'gray', height:'100vh'}}>
-  <div className="App" style={{backgroundColor:'black', color:'white', justifyContent:'center', textAlign:'center', margin:'100px', borderRadius:'10px'}}>
+  <div className="App" style={{backgroundColor:'black', color:'white', justifyContent:'center', textAlign:'center', margin:'100px', borderRadius:'10px',  minWidth:'300px'}}>
    <ErrorBoundary>
     <CheckError />
    </ErrorBoundary>
@@ -26,8 +27,8 @@ export default function RenderError() {
 }
 
 function CheckError() {
- const data = { state };
- return <h1>{data.state} values</h1>;
+ const data = {state };
+ return <h1>{data.state}</h1>;
 }
 
 class ErrorBoundary extends React.Component {
