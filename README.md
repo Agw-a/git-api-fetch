@@ -1,6 +1,7 @@
-#React Counter App
+# React Counter App
 
-##The project
+## The project
+
 Create a react counter application implementing useReducer Hook and a custom Hook.
 
 ### List of pages
@@ -13,5 +14,6 @@ These components make up what a user experiences when they check out **The Count
 | [Mainpage.vue](./src/pages/mainPage.js)   | The main counter app. There's a link to go to the custom Hook implementation. |
 | [CustomHook.js](./src/pages/customHook.js) | Page where users can see the other users they've matched with. A match occurs when two users have liked each other. |
 
-##Deployment
+## Deployment
+
 This app has been deployed with vercel, find it  live [here](https://counter-agw-a.vercel.app/)
