@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { RenderLoadingState, RepositoryAtGlance, } from "../modules/modules";
+import Footer from "./footer";
 import RepoDeatils from "./repoDetails";
 
 
@@ -9,6 +10,7 @@ const GetApiData = () => {
   const [items, setItems] = useState([]);
   const [User] = useState("Agw-a");
   const [pageNumber, setPageNumber] = useState(0);
+  const [toggleView, setToggleView] = useState(false)
 
 
   
@@ -53,21 +55,22 @@ const GetApiData = () => {
     <div className="main-page-holder">
       <div className="profile-wrap">
       <div className="profile-summary">
-        <h2>Viewing {User}'s repositories.</h2>
-        <div>
-        {items.length}
+        <div><h2>Viewing {User}'s repositories.</h2></div>
+        
+        <div id="total-repos">
+        <h3>{items.length} total repositories</h3>
         </div>
-        <div>
-          Followers
+        <div id='followers'>
+          <h3> 3 Followers</h3>
         </div>
-        <div>Following</div>
+        <div id="following"><h3>14 Following</h3></div>
         
         </div>
       </div>
-      <div className="view-card">
-        <div>List View</div>
-        <div>Card View</div>
-      </div>
+      {/* <div className="view-card">
+        <button onClick={() =>setToggleView(!toggleView)}>{toggleView ? <>grid</> : <>List</>}List View</button>
+        <button>Card View</button>
+      </div> */}
       {!items ? <RenderLoadingState /> :
       <div>
         <div className='individual-cards'>{DisplayRepos}</div>
@@ -87,7 +90,7 @@ const GetApiData = () => {
         }
     
    
- 
+ <Footer />
   </div>
   )
   ;
