@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {Helmet} from 'react-helmet-async';
 
 const PageNotFoundImage = () => {
   return (
@@ -31,6 +32,11 @@ const ErrorSetup = () => {
 const RenderErrorPage = () => {
   return (
     <>
+    <Helmet>
+    <title>Not Found</title>
+    <meta name='description' content='Page not Found'/>
+    <link rel='canonical' href='*'/>
+</Helmet>
       <ErrorSetup />
     </>
   );

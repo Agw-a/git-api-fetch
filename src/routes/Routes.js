@@ -15,7 +15,7 @@ const AppRoutes = () => {
     <ErrorBoundary FallbackComponent={FallBackError} onError={ErrorHandler}>
     <Routes>
         <Route path='/' element={<Main/>} /> 
-        <Route path='/Couter-app/*' element={<MainPage/>}/>  
+        <Route path='/Couter-app/' element={<MainPage/>}/>  
         <Route path='/Custom Hook' element={<CustomHookCounter/>}/>    
         <Route path='*' element={<PageNotFound />}/>
     </Routes>
