@@ -25,7 +25,7 @@ const UseCounterHook = () => {
       <button onClick={decreament} >-</button>
       
       </div>
-      <Link  className='link-frm-custom' to={'/Couter-app'}>Add more items before checkout</Link>
+      <Link  className='link-frm-custom' to={'/Error'}>Add more items before checkout</Link>
     </div>
     </div>
     </div> 

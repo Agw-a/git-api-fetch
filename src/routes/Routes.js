@@ -7,6 +7,7 @@ import MainPage from '../pages/mainPage';
 import FallBackError from '../components/fallBackError';
 import ErrorHandler from '../components/errorHandler';
 import CustomHookCounter from '../pages/customHook';
+import RenderError from '../utils/errorBoundary';
 
 
 
@@ -16,7 +17,8 @@ const AppRoutes = () => {
     <Routes>
         <Route path='/' element={<Main/>} /> 
         <Route path='/Couter-app/' element={<MainPage/>}/>  
-        <Route path='/Custom Hook' element={<CustomHookCounter/>}/>    
+        <Route path='/Custom Hook' element={<CustomHookCounter/>}/>  
+        <Route path='/Error' element={<RenderError/>}/>  
         <Route path='*' element={<PageNotFound />}/>
     </Routes>
     </ErrorBoundary>
