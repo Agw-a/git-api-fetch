@@ -16,4 +16,4 @@ These components make up what a user experiences when they check out **The Count
 
 ## Deployment
 
-This app has been deployed with vercel, find it  live [here](https://counter-agw-a.vercel.app/)
+This app has been deployed with vercel, find it  live [here](https://counter-delta-sandy.vercel.app/)
